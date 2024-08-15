@@ -38,7 +38,10 @@ Please enter the command to execute on each server (or 'q' to quit):
 Please enter the command to execute on each server (or 'q' to quit):  
 
 ./ssh_with_password.sh 
-Please enter the command to execute on each server (or 'q' to quit):  
+Please enter the command to execute on each server (or 'q' to quit):
+
+#采集执行日志
+./ssh_with_key_and_passphrase.sh > ssh.log
 ```
 
 - 注意事项
