@@ -13,7 +13,7 @@ SSH_PORT=22
 SSH_TIMEOUT=1
 
 #指定的ssh私钥文件
-SSH_KEY="~/.ssh/id_rsa"
+SSH_KEY="/root/.ssh/id_rsa"
 
 #进入一个无限循环（直到用户输入q退出）
 while true; do
