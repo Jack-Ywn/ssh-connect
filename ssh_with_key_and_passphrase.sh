@@ -13,7 +13,7 @@ SSH_PORT=22
 SSH_TIMEOUT=1
 
 #指定的ssh私钥文件
-SSH_KEY="~/.ssh/id_rsa"
+SSH_KEY="/root/.ssh/id_rsa"
 
 #启动ssh-agent
 eval "$(ssh-agent -s)" > /dev/null 2>&1
