@@ -9,6 +9,9 @@ IP_LIST="ip.txt"
 SSH_USER="root"
 SSH_PORT=22
 
+#设置ssh连接超时时间（秒） 
+SSH_TIMEOUT=1
+
 #指定的ssh私钥文件
 SSH_KEY="~/.ssh/id_rsa"
 
@@ -34,7 +37,7 @@ while true; do
         echo "=================================================="
         echo "Connecting to $IP_ADDRESS as $SSH_USER on port $SSH_PORT"
         echo "--------------------------------------------------"
-        ssh -o StrictHostKeyChecking=no -n -i "$SSH_KEY" -p "$SSH_PORT" "$SSH_USER@$IP_ADDRESS" "$COMMAND"
+        ssh -o ConnectTimeout=$SSH_TIMEOUT -o StrictHostKeyChecking=no -n -i "$SSH_KEY" -p "$SSH_PORT" "$SSH_USER@$IP_ADDRESS" "$COMMAND"
         echo "--------------------------------------------------"
         echo "Completed for $IP_ADDRESS"
         echo "=================================================="
