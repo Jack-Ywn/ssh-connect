@@ -8,7 +8,7 @@ IP_LIST="ip.txt"
 #配置ssh的用户名、端口、密码
 SSH_USER="root"
 SSH_PORT=22
-SSH_PASSWORD="1" 
+SSH_PASSWORD="password" 
 
 #设置ssh连接超时时间（秒） 
 SSH_TIMEOUT=1  
